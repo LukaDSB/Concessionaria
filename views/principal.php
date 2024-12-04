@@ -1,1 +1,1 @@
-<h1>Alo!</h1>
+<?php include '../components/headerComponent.php';?>
