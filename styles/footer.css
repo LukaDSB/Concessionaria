@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.informacoes{
+    width: 100%;
+    padding: 2em;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.informacoes, .informacoes-redes-sociais{
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+}
+
+.informacoes-empresa, .informacoes-links-adicionais{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+}
+
+.informacoes-empresa, .informacoes-empresa-btn, footer{
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes-empresa-btn{
+    display: flex;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 12.5em;
+    height: 3em;
+    border: 1px solid #0a3d78;
+    color: #0a3d78;
+}
+    .informacoes-empresa-btn:hover{
+        background-color: #0a3d78;
+        color: white;
+    }
+
+.informacoes-redes-sociais{
+    padding: 1em 2em;
+    margin: 1em 0 ;
+}
+    .informacoes-redes-sociais i {
+        padding: 10px;
+        background-color: #0a3d78;
+        color: white;
+        border-radius: 50%;
+        margin: 0 0.2em;
+    }
+    .informacoes-redes-sociais i:hover{
+        background-color: rgb(12, 106, 214);
+    }
+
+.informacoes-links-adicionais{
+    padding: 1em;
+    margin: 0 1.5em;
+}
+
+    .informacoes-links-adicionais h2{
+        font-size: 18px;
+        margin-bottom: 1em;
+        color: #0a3d78;
+        width: 10em;
+    }
+
+    .informacoes-links-adicionais a{
+        margin: 0.2em 0;
+        color: #0a3d78;
+        font-size: 15px;
+    }
+
+footer{
+    display: flex;
+    text-align: center;
+    background-color: #0a3d78;
+    color: white;
+    padding: 0.5em 0;
+    font-size: 15px;
+}
