@@ -8,10 +8,13 @@ a{
 }
 
 .card{
-    background-color: rgb(143, 24, 24);
+    background-color: rgb(255, 255, 255);
     width: 300px;
     padding: 1em;
     border-radius: 15px;
+    height: 360px;
+    box-shadow: 0 3px 5px 0 rgba(173, 173, 173, 0.5); 
+
 }
     .card h3{
         font-size: 24px;    

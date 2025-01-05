@@ -40,6 +40,7 @@ main, .titulo-header, .titulo-header-nome-veiculo, .titulo-header, .atributos-ve
         color: rgb(100, 100, 100);
     }
     .titulo-header button{
+        text-align: center;
         padding: 1em;
         border-radius: 50%;
         background-color: rgb(243, 243, 243);
@@ -54,6 +55,7 @@ main, .titulo-header, .titulo-header-nome-veiculo, .titulo-header, .atributos-ve
             color: white;
             cursor:pointer;
         }
+       
 
 .titulo-header-nome-veiculo{
     margin: 0 15em 0 3.5em;
