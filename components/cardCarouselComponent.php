@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/cardCarousel.css">
-    <style>@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");</style>
-    
+  <meta charset="utf-8" />
+  <title>Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../styles/cardCarousel.css">
+
 </head>
+
 <body>
-
-<!-- CARD -->
-        <div class="card">
-            <img src="#" alt="FotoCarro">
-        <div class="logo-e-btn">
-            <img src="#" alt="Logo">
-            <a href="#">Ver parcelas</a>
-        </div>
-        <div class="titulo">
-            <h4>Nome do Carro</h4>
-            <p>Descrição do carro</p>
-        </div>
-        <div class="caracteristicas">
-            <p>Quilometragem/Cambio</p>
-            <span><p>2023/2024</p></span>
-        </div>
-        <h3>R$ 50.000,00</h3>
-
-        <div class="disponivel">
-        <i class="bi bi-geo-alt-fill"></i>
-        <p>Disponível em n lojas</p>
-        </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <?php include 'cardComponent.php';?>
     </div>
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
+
 </html>
