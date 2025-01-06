@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    z-index: 10;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 1em;
+    border-radius: 15px;
+    height: 360px;
+    box-shadow: 0 3px 5px 0 rgba(173, 173, 173, 0.5); 
+
+}
+    .card h3{
+        font-size: 24px;    
+        font-weight: 800;  
+        margin-left: 0.4em;
+    }
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-e-btn, .titulo, .caracteristicas, .disponivel{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo-e-btn{
+    justify-content: space-between;
+    width: 85%;
+    padding: 0.5em;
+    align-items: center;
+    margin: 0.5em;
+}
+
+    .logo-e-btn a{
+        border-radius: 30px;
+        padding: 0.5em;
+        background-color: #0a3d78;
+        color: white;
+    }
+
+.titulo{
+    color: rgb(100, 100, 100);
+    margin-bottom: 1.5em;
+    padding: 0 0.5em;
+    width: 95%;
+    justify-content: space-between;
+}
+
+    .titulo h4{
+        text-transform: uppercase;
+    }
+
+.caracteristicas{
+    width: 90%;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.disponivel{
+    margin: 3em 1em 1em 1em;
+    justify-content: space-between;
+    width: 55%;
+    color: rgb(100, 100, 100);
+
+}
