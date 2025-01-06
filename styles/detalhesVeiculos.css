@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.informacoes-gerais{
+    margin: 1em;
+    background-color:  rgb(255, 255, 255);
+    width: 65%;
+
+}
+
+main, .titulo-header, .titulo-header-nome-veiculo, .titulo-header, .atributos-veiculo, .itens-veiculo-lista-unidade{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.informacoes-locacao form, .informacoes-locacao-inputs, .informacoes-locacao, .itens-veiculo-lista{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.titulo-header-nome-veiculo, .titulo-header{
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-header{
+    border-radius: 15px 15px 0 0;
+    padding: 1em;
+    border-bottom: 1px solid  rgb(212, 212, 212);;
+}
+    .titulo-header h2{
+        font-weight: 800;
+    }
+    .titulo-header p{
+        color: rgb(100, 100, 100);
+    }
+    .titulo-header button{
+        text-align: center;
+        padding: 1em;
+        border-radius: 50%;
+        background-color: rgb(243, 243, 243);
+        color: rgb(9, 87, 175);
+        box-shadow: 0 3px 5px 0 rgba(46, 46, 46, 0.5); 
+    }
+    .titulo-header button i {
+        font-size: 20px;
+    }
+        .titulo-header button:hover{
+            background-color:  rgb(9, 87, 175);
+            color: white;
+            cursor:pointer;
+        }
+       
+
+.titulo-header-nome-veiculo{
+    margin: 0 15em 0 3.5em;
+}
+    .titulo-header-nome-veiculo i{
+       margin: 0 1em;
+       font-size: 7px;
+       color: rgb(9, 87, 175);
+    }
+    .titulo-header-nome-veiculo h2{
+        text-transform: uppercase;
+    }
+
+.atributos-veiculo{
+    text-align: left;
+    padding: 1em;
+}
+
+.atributo-veiculo{
+    margin: 1em 1em;
+}
+    .atributo-veiculo p{
+        margin-bottom: 0.3em;
+    }
+    .atributo-veiculo h4{
+        font-weight: 700;
+    }
+
+.descricao-veiculo{
+    margin: 1em;
+    padding: 1.5em;
+    border-bottom: 1px solid  rgb(212, 212, 212);
+}
+
+    .descricao-veiculo h4{
+        color: rgb(9, 87, 175);
+        margin-bottom: 1em;
+    }
+    .descricao-veiculo p{
+        color: rgb(100, 100, 100);
+    }
+
+.itens-veiculo-titulo{
+    margin: 2em;
+    display: inline-block;
+    position: relative;
+    padding: 10px 15em 10px 15px;
+    color: white;
+    font-weight: bold;
+    background-color: #0a3d78;
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+}
+    .itens-veiculo-titulo p{
+        margin-left: 2em;
+    }
+
+.itens-veiculo-lista-unidade{
+    align-items: center;
+    margin: 1em 2em;
+}
+    .itens-veiculo-lista-unidade i{
+        font-size: 7px;
+        margin: 0.8em;
+        color: rgb(9, 87, 175);
+
+    }
+    .itens-veiculo-lista-unidade p {
+        font-weight: 500;
+        color: rgb(100, 100, 100);
+
+    }
+
+.informacoes-locacao{
+    width: 30%;
+    background-color: white;
+    text-align: left;
+    padding: 1em;
+    margin-top: 1em;
+}
+    .informacoes-locacao h2{
+        margin: 0.2em 0.2em 0.5em 1.2em;
+    }
+    .informacoes-locacao p{
+        color: rgb(100, 100, 100);
+        margin-left: 2em;
+    }
+
+.informacoes-locacao form{
+    padding: 0.5em 2em 2em 2em;
+}
+
+    .informacoes-locacao form input[type="submit"]{
+        background-color: #0a3d78;
+        color: white;
+        padding: 1.5em;
+        border: none;
+        margin-top: 1em;
+    }
+    .informacoes-locacao form input[type="submit"]:hover{
+        background-color: rgb(12, 106, 214);
+        cursor: pointer;
+    }
+
+.informacoes-locacao-inputs input{
+    margin: 0 0 1.5em 0;
+    height: 3.5em;
+    padding: 1em;
+}
+
+.informacoes-locacao-checkbox{
+    margin: 0.5em 0;
+    color: rgb(9, 87, 175);
+}
+    .informacoes-locacao-checkbox input[type="checkbox"]{
+       accent-color: #0a3d78;
+    }
