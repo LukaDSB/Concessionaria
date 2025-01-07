@@ -15,16 +15,13 @@ if (isset($_POST['id'])) {
     $cambio = $_POST['cambio'];
     $placa = $_POST['placa'];
     $descricao = $_POST['descricao'];
-    $idCategoria = $_POST['idCategoria'];
-    $idMarca = $_POST['idMarca'];
-    $idContato = $_POST['idContato'];
 
-    $result = $carrosModel->atualizarCarros($id, $nome, $nomeImagemBanco, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao, $idCategoria, $idMarca, $idContato);
+    $result = $carrosModel->atualizarCarros($id, $nome, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao);
 
     if ($result) {
-        header('Location: ../views/principal.php');
+        header('Location: ../views/administrador.php');
     } else {
-        echo "Erro ao atualizar o carro.";
+        echo "Erro ao cadastrar carro.";
     }
 
     $carrosModel->closeConnection();

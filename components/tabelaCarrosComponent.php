@@ -9,9 +9,6 @@
 </head>
 <body>
     <div class="container mt-5">
-        <div class="mb-4 text-center">
-            <h2 class="fw-bold">Lista de Carros</h2>
-        </div>
         <?php
             include_once '../model/carrosModel.php';
 
@@ -43,7 +40,7 @@
                             <td>Disponível em 1 loja</td>
                             <td>
                                 <a href="detalhesVeiculo.php?id=' . $row["id"] . '" class="btn btn-primary btn-sm">Detalhes</a>
-                                <a href="excluirCarro.php?id=' . $row["id"] . '" class="btn btn-danger btn-sm" onclick="return confirm(\'Tem certeza que deseja excluir este carro?\');">Excluir</a>
+                                <a href="../controller/excluirCarrosController.php?id=' . $row["id"] . '" class="btn btn-danger btn-sm" onclick="return confirm(\'Tem certeza que deseja excluir este carro?\');">Excluir</a>
                                 <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditarCarro" 
                                 data-id="' . $row["id"] . '" 
                                 data-nome="' . $row["nome"] . '" 
@@ -70,7 +67,6 @@
         ?>
     </div>
 
-    <!-- Modal de Edição -->
     <div class="modal fade" id="modalEditarCarro" tabindex="-1" aria-labelledby="modalEditarCarroLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">

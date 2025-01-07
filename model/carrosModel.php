@@ -29,7 +29,7 @@ class CarrosModel {
         return $resultado->fetch_assoc();
     }
 
-    public function excluirCarro($id) {
+    public function excluirFilme($id) {
         $sql = "DELETE FROM veiculo WHERE id = ?";
         $stmt = $this->conn->prepare($sql);
     
@@ -57,12 +57,12 @@ class CarrosModel {
         }
     }
 
-    public function atualizarCarros($nome, $nomeImagemBanco, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao, $idCategoria, $idMarca, $idContato) {
-        $sql = "UPDATE veiculo SET nome = ?,foto = ?, valor = ?, anoFabricacao = ?, anoModelo = ?, cor = ?, combustivel = ?, quilometragem = ?, cambio = ?, placa = ?, descricao = ?, idCategoria = ?, idMarca = ?, idContato = ? WHERE id = ?";
+    public function atualizarCarros($id, $nome, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao) {
+        $sql = "UPDATE veiculo SET nome = ?, valor = ?, anoFabricacao = ?, anoModelo = ?, cor = ?, combustivel = ?, quilometragem = ?, cambio = ?, placa = ?, descricao = ? WHERE id = ?";
         $stmt = $this->conn->prepare($sql);
     
         if ($stmt) {
-            $stmt->bind_param("ssissssisssiiii", $nome, $foto, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao, $idCategoria, $idMarca, $idContato, $id);
+            $stmt->bind_param("sissssisssi", $nome, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao, $id);
             $executou = $stmt->execute();
             $stmt->close();
     

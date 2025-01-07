@@ -2,16 +2,16 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 15vw; /* Define a largura do card */
+    width: 15vw; 
     border-radius: 10px;
     box-shadow: 2px 2px 5px 0px rgba(173, 170, 173, 1);
     overflow: hidden;
 }
 
 .cardCarros img {
-    width: 100%; /* Ocupa toda a largura do card */
-    height: 200px; /* Altura fixa para todas as imagens */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 10px 10px 0 0;
 }
 
@@ -34,6 +34,9 @@
 .card-body-carros {
     text-align: start;
     justify-content: start;
+    p{
+        padding-bottom: 10px;
+    }
 }
 
 container {
@@ -46,15 +49,15 @@ container {
 }
 
 .card-link {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: inherit; /* Mantém a cor original do texto */
+    text-decoration: none;
+    color: inherit;
 }
 
 .cardCarros {
-    cursor: pointer; /* Indica que é clicável */
+    cursor: pointer; 
     transition: transform 0.2s ease-in-out;
 }
 
 .cardCarros:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.05);
 }
