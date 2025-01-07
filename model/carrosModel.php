@@ -21,6 +21,14 @@ class CarrosModel {
         return $result;
     }
 
+    public function getCarroPorId($id) {
+        $stmt = $this->conn->prepare("SELECT * FROM veiculo WHERE id = ?");
+        $stmt->bind_param('i', $id);
+        $stmt->execute();
+        $resultado = $stmt->get_result();
+        return $resultado->fetch_assoc();
+    }
+
     public function excluirFilme($id) {
         $sql = "DELETE FROM filmes WHERE filmes_id = ?";
         $stmt = $this->conn->prepare($sql);

@@ -13,7 +13,7 @@
 
     <div class="headerNavbar">
         <ul>
-            <li><img src="../styles/logo.avif" alt=""></li>
+            <li><a href="../views/principal.php"><img src="../styles/logo.avif" alt=""></a></li>
             <li><button>Zero Km</button></li>
             <li><button>Seminovos</button></li>
             <li><button>Tabela FIPE</button></li>

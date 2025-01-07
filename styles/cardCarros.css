@@ -44,3 +44,17 @@ container {
     gap: 1vw;
     margin: 0 auto;
 }
+
+.card-link {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor original do texto */
+}
+
+.cardCarros {
+    cursor: pointer; /* Indica que é clicável */
+    transition: transform 0.2s ease-in-out;
+}
+
+.cardCarros:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
