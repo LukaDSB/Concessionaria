@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Oficina</h2>  
                     <p class="card-text">Os melhores profissionais para cuidar do seu veículo.</p>
-                    <button>Procurar</button>
+                    <button><b>PROCURAR</b></button>
                 </div>
             </div>
         
@@ -26,7 +26,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Revisão</h2>  
                     <p class="card-text">Agendamento online com toda comodidade.</p>
-                    <button>Agendar</button>
+                    <button><b>AGENDAR</b></button>
                 </div>
             </div>
         </div>

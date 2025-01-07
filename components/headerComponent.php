@@ -21,6 +21,7 @@
             <li><button>Financiamento</button></li>
             <li><button>Vendas diretas</button></li>
             <li><button>Lojas</button></li>
+            <li><a href="../views/administrador.php"><button>Adm</button></a></li>
             <li>
                 <button><i class="fa-solid fa-magnifying-glass"></i></i>Buscar</button>
             </li>

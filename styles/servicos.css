@@ -23,6 +23,7 @@
 }
 
 .card {
+    background-color: #F2F2F2;
     display: flex; 
     flex-direction: column; 
     border-radius: 16px  16px 16px 16px;
@@ -40,14 +41,18 @@
 }
 
 .card-body{
-    background-color: #fffcfc;
     flex-grow: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     button{
         background-color: white;
         color: #19467E;
+        margin-top: 1vh;
+    }
+    p{
+        font-size: 1.2em;
     }
 }
 

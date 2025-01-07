@@ -13,14 +13,13 @@
             $db = new CarrosModel();
             $carros = $db->getCarros();
             $db->closeConnection();
-            $contador = 1;
 
             if ($carros->num_rows > 0) {
                 while ($row = $carros->fetch_assoc()) {
                 echo '<a href="detalhesVeiculo.php?id=' . $row["id"] . '" class="card-link">
                 <div class="cardCarros">
                     <div class="card-body-carros">
-                        <img src="../styles/carros/' . $contador . '.jpg" alt="Imagem do Carro ' . $contador . '">
+                        <img src="../styles/carros/'. $row["foto"] .'.jpg" alt="Imagem do Carro ">
                         <h5 class="card-title">' . $row["nome"] . '</h5>
                         <p class="card-text">' . $row["quilometragem"] . 'Km / '.$row["cambio"].'</p>
                         <p class="card-text"><b>R$' . $row["valor"] . '</b></p>
@@ -28,7 +27,6 @@
                     </div>
                 </div>
               </a>';
-                    $contador++;
                 }
             } else {
                 echo "<p>Nenhum Carro encontrado</p>";

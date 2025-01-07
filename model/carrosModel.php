@@ -29,8 +29,8 @@ class CarrosModel {
         return $resultado->fetch_assoc();
     }
 
-    public function excluirFilme($id) {
-        $sql = "DELETE FROM filmes WHERE filmes_id = ?";
+    public function excluirCarro($id) {
+        $sql = "DELETE FROM veiculo WHERE id = ?";
         $stmt = $this->conn->prepare($sql);
     
         if ($stmt) {
@@ -43,11 +43,11 @@ class CarrosModel {
         }
     }
 
-    public function cadastrarFilmes($titulo, $descricao, $anoLancamento, $duracaoLocacao, $duracaoFilme, $idioma, $precoLocacao, $classificacao, $idiomaId, $nomeImagem) {
-        $sql = "INSERT INTO filmes (titulo, descricao, anoLancamento, duracaoLocacao, duracaoFilme, idioma, precoLocacao, classificacao, idioma_id, imagem) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    public function cadastrarVeiculo($nome, $foto, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao, $idCategoria, $idMarca, $idContato) {
+        $sql = "INSERT INTO veiculo (nome, foto, valor, anoFabricacao, anoModelo, cor, combustivel, quilometragem, cambio, placa, descricao, idCategoria, idMarca, idContato) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     
         if ($stmt = $this->conn->prepare($sql)) {
-            $stmt->bind_param("ssiiisdsis", $titulo, $descricao, $anoLancamento, $duracaoLocacao, $duracaoFilme, $idioma, $precoLocacao, $classificacao, $idiomaId, $nomeImagem);
+            $stmt->bind_param("ssissssisssiii", $nome, $foto, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao, $idCategoria, $idMarca, $idContato);
             $executou = $stmt->execute();
             $stmt->close();
     
@@ -57,12 +57,12 @@ class CarrosModel {
         }
     }
 
-    public function atualizarFilmes($id, $titulo, $descricao, $anoLancamento, $duracaoLocacao, $duracaoFilme, $idioma, $precoLocacao, $classificacao) {
-        $sql = "UPDATE filmes SET titulo = ?, descricao = ?, anoLancamento = ?, duracaoLocacao = ?, duracaoFilme = ?, idioma = ?, precoLocacao = ?, classificacao = ? WHERE filmes_id = ?";
+    public function atualizarCarros($nome, $nomeImagemBanco, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao, $idCategoria, $idMarca, $idContato) {
+        $sql = "UPDATE veiculo SET nome = ?,foto = ?, valor = ?, anoFabricacao = ?, anoModelo = ?, cor = ?, combustivel = ?, quilometragem = ?, cambio = ?, placa = ?, descricao = ?, idCategoria = ?, idMarca = ?, idContato = ? WHERE id = ?";
         $stmt = $this->conn->prepare($sql);
     
         if ($stmt) {
-            $stmt->bind_param("ssiiisdsi", $titulo, $descricao, $anoLancamento, $duracaoLocacao, $duracaoFilme, $idioma, $precoLocacao, $classificacao, $id);
+            $stmt->bind_param("ssissssisssiiii", $nome, $foto, $valor, $anoFabricacao, $anoModelo, $cor, $combustivel, $quilometragem, $cambio, $placa, $descricao, $idCategoria, $idMarca, $idContato, $id);
             $executou = $stmt->execute();
             $stmt->close();
     

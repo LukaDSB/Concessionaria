@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+#bannerCarousel{
+  display: flex;
+  justify-self: center;
+  width: 70%;
+}
+
 .carousel {
   color: white;
   height: 480px; 
