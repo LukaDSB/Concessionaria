@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+.divMarcas{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    width: 70%;
+    color: whitesmoke;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.divMarcasHeader{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(9, 87, 175);
+}
+
+.divMarcasLista{
+    width: 100%;
+    padding:  0% 10%;
+    background-color: white;
+}
+
+.divMarcasLista ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divMarcasLista li {
+    width: 65px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.divMarcasLista img {
+    width: 100%; /* Ajusta à largura do container */
+    height: 100%; /* Ajusta à altura do container */
+    object-fit: contain;
+}

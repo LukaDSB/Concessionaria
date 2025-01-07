@@ -1,0 +1,46 @@
+.cardCarros {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 15vw; /* Define a largura do card */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(173, 170, 173, 1);
+    overflow: hidden;
+}
+
+.cardCarros img {
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 10px 10px 0 0;
+}
+
+.cardCarros h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 10px;
+    font-size: 1em;
+}
+
+.cardCarros p {
+    margin: 5px 10px;
+    font-size: 0.9em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-body-carros {
+    text-align: start;
+    justify-content: start;
+}
+
+container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    gap: 1vw;
+    margin: 0 auto;
+}
